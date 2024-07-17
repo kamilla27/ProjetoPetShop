@@ -1,0 +1,103 @@
+<?php
+include("template.html");
+
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Importando o arquivo de estilos CSS -->
+</head>
+<body style="background: url('imagens-carrossel/image2.png') no-repeat center center fixed; background-size: cover;">
+    <header>
+        <h1>Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#cadastro-responsavel">Cadastro do Responsável</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#cadastro-pet">Cadastro de Pet</a></li>
+                <li><a href="#excluir-cadastro">Excluir Cadastro</a></li>
+                <li><a href="#agendar-passeio">Agendar/Cancelar Passeios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cadastro-responsavel">
+            <h2>Cadastro do Responsável</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="endereço">Endereço:</label>
+                <input type="text" id="endereço" name="endereço" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <div class="container">
+                <h2>Esqueci a Senha</h2>
+                <form id="esqueciSenhaForm">
+                    <div class="form-group">
+                        <label for="emailEsqueciSenha">Email:</label>
+                        <input type="email" id="emailEsqueciSenha" name="emailEsqueciSenha" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="cadastro-pet">
+            <h2>Cadastro de Pet</h2>
+            <form>
+                <label for="nome-pet">Nome do Pet:</label>
+                <input type="text" id="nome-pet" name="nome-pet" required>
+                <label for="especie">Espécie:</label>
+                <input type="text" id="especie" name="especie" required>
+                <label for="nome-resp">Nome do Responsável:</label>
+                <input type="text" id="nome-resp" name="nome-resp" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="excluir-cadastro">
+            <h2>Excluir Cadastro</h2>
+            <form>
+                <label for="email-excluir">Email do Responsável:</label>
+                <input type="email" id="email-excluir" name="email-excluir" required>
+                <button type="submit">Excluir</button>
+            </form>
+        </section>
+
+        <section id="agendar-passeio">
+            <h2>Agendar/Cancelar Passeios</h2>
+            <form>
+                <label for="data">Data do Passeio:</label>
+                <input type="date" id="data" name="data" required>
+                <label for="acao">Ação:</label>
+                <select id="acao" name="acao" required>
+                    <option value="agendar">Agendar</option>
+                    <option value="cancelar">Cancelar</option>
+                </select>
+                <button type="submit">Confirmar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
+
