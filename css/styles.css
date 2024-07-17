@@ -5,14 +5,16 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(228, 148, 148, 0.8);
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    margin: 0;
+    margin:0;
+    text-decoration-color: aqua;
+
 }
 
 nav ul {
@@ -36,9 +38,9 @@ nav ul li a {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(150, 104, 104, 0.8);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(153, 81, 81, 0.1);
 }
 
 h2 {
@@ -63,7 +65,7 @@ input[type="datetime-local"] {
     width: calc(100% - 20px);
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #915252;
     border-radius: 5px;
 }
 
