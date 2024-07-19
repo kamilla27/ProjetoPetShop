@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato - Confeitaria</title>
+    <link rel="stylesheet" href="style-form.css">
+</head>
+<body>
+    <header>
+        <nav class="navgation">
+            <a href="formulario-contato.html" class="logo">D<span>oce</span>ria G<span>or</span>met</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="Index.html">Home</a></li>
+                <li class="nav-item"><a href="Produtos.html">Produtos</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <Span class="bar"></Span>
+                <Span class="bar"></Span>
+                <Span class="bar"></Span>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <div class="container">
+        <h2>Formulário de Contato:</h2>
+        <p>Vejam os Depoimentos de nossos Clientes no Link abaixo:<a href="depoimentos.html">Depoimentos</a>
+        </p>
+        <form id="meuformulario" action="#" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input #meuInput type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            
+        </form>
+        <div id="Enviado com suceso!"></div>
+        <script>
+            document.getElementById('meuformulario').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita que o formulário seja enviado via HTTP
+        
+                // Simula o envio do formulário (pode ser substituído por uma chamada AJAX real)
+                // Aqui você poderia fazer uma requisição POST para enviar os dados do formulário
+        
+                // Exibe a mensagem de sucesso
+                document.getElementById('mensagem').textContent = 'Seu Formulário já foi enviado com sucesso!';
+        
+                // Limpa os campos do formulário (opcional)
+                this.reset();
+            });
+        </script>
+        
+        
+    </div>
+        <form action="#" method="POST">
+            
+<div class="contact-info">
+    <p>Entre em contato conosco também através do Instagram:
+        <a href="https://www.instagram.com/milladoceriagourmet/" target="_blank">milladoceriagourmet</a>
+    </p>
+    <p>Ou pelo WhatsApp: <a href="https://wa.me/5527981187167/?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos">Link para o WhatsApp</a>
+
+    </a>
+    <!--Kamilla-->
+</div>
+</body>
+</html>

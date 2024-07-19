@@ -1,0 +1,157 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red: rgb(196, 52, 76);
+    --white: #fff;
+    --dark: rgba(0, 0, 0, 0.525);
+}
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+.navgation{
+    background: linear-gradient(90deg, #004aad, #cb6ce6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+   box-shadow: 0 0.5em 0.4rem #ccc;
+   
+}
+.navgation .logo{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navgation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navgation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navgation ul li a:hover{
+    color: var(--red);
+}
+.navgation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu.ativo .bar:nth-last-child(1){
+    transform: translateY(8px) rotate(5deg);
+}
+.menu.menu.ativo .bar:nth-child(2){
+    opacity: 0;
+}
+.menu.menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-40Sdeg);
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--red);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.flash-cards-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flash-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(100% / 3 - 20px);
+    flex-grow: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flash-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #6d351a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content p {
+    line-height: 1.6;
+}
+
+.card-content ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.mission {
+    background-color: #836FFf;
+}
+
+.vision {
+    background-color: #85c1f5;
+}
+
+.values {
+    background-color: #00BFFf;
+}

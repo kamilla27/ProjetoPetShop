@@ -1,0 +1,210 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red: rgb(196, 52, 76);
+    --white: #fff;
+    --dark: rgba(0, 0, 0, 0.525);
+}
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+.navgation{
+    background: linear-gradient(90deg, #004aad, #cb6ce6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+   box-shadow: 0 0.5em 0.4rem #ccc;
+   
+}
+.navgation .logo{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navgation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navgation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navgation ul li a:hover{
+    color: var(--red);
+}
+.navgation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu.ativo .bar:nth-last-child(1){
+    transform: translateY(8px) rotate(5deg);
+}
+.menu.menu.ativo .bar:nth-child(2){
+    opacity: 0;
+}
+.menu.menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-40Sdeg);
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--red);
+}
+
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #a58383;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgb(94, 60, 60);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p{
+    padding-left: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid rgb(207, 115, 115);
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #af4ca7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #9545a0;
+}
+/* styles.css Depoimentos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(236, 214, 214);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(132, 79, 79, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.depoimento {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ebe8e8;
+    border-left: 4px solid #f075c1;
+    border-radius: 4px;
+}
+
+.depoimento h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.depoimento p {
+    color: #666;
+    font-style: italic;
+}
+
+a {
+    display:block;
+    text-align: left;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #af4ca2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
