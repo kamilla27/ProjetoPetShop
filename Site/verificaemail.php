@@ -1,7 +1,7 @@
 <?php
 // Incluir autoload do Composer ou arquivos do PHPMailer manualmente
 //require 'vendor/autoload.php'; // Se estiver usando Composer
-require 'PHPMailer/src/OAuth.php'; // Se estiver usando PHPMailer manualmente
+require 'PHPMailer/PHPMailerAutoload.php'; // Se estiver usando PHPMailer manualmente
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
